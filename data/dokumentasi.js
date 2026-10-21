@@ -5,6 +5,15 @@
 
 const dokumentasiData = [
  {
+    id: "pemilos-2026-day-2",
+    title: "Pemilos 2026 Day 2: Pengumuman Pemilos",
+    date: "2026-10-21",
+    category: ["organisasi", "event-sekolah"],
+    thumbnail: "assets/dokumentasi/pemilos day 2.png",
+    description: ``,
+    driveUrl: "https://drive.google.com/drive/folders/1r-Y4HFIx7tKj-O1x62rMmgRgBY5mlgLR?usp=sharing"
+  },
+  {
     id: "pemilos-2026-day-1",
     title: "Pemilos 2026 Day 1: Awal Perjalanan Demokrasi",
     date: "2026-10-20",
