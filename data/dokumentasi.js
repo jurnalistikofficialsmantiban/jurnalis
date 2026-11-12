@@ -1,15 +1,30 @@
 /**
  * Data dokumentasi JURNALISTIK.
- * category harus salah satu dari: "event-sekolah" | "organisasi" | "school-life"
+ * category harus salah satu dari: "event-sekolah" | "sosialisasi" | "organisasi" | "school-life"
  */
 
 const dokumentasiData = [
 {
+    id: "Hari-pahlawan",
+    title: "Perjuangan Belum Usai: Pesan Hari Pahlawan untuk Generasi Muda",
+    date: "2026-11-10",
+    category: "sosialisasi",
+    thumbnail: "assets/dokumentasi/hari pahlawan.png",
+    description: `Banjar, 10 November 2026 — SMA Negeri 3 Banjar melaksanakan upacara pengibaran bendera dalam rangka memperingati Hari Pahlawan pada Selasa (10/11/2026). Kegiatan yang berlangsung di lapangan upacara sekolah ini diikuti oleh siswa kelas X dan XI, Bapak/Ibu Guru, serta tenaga Tata Usaha. Upacara dimulai pukul 06.30 WIB dengan suasana yang ramai dan penuh partisipasi dari warga sekolah. Pelaksanaan upacara berlangsung dengan tertib melalui sejumlah rangkaian prosesi, pengibaran bendera Merah Putih, pembacaan teks kenegaraan, hingga menyanyikan lagu hari pahlawan. Pelaksanaan upacara ini tidak hanya menjadi bagian dari peringatan Hari Pahlawan, tetapi juga merupakan bentuk penghormatan terhadap jasa dan pengorbanan para pahlawan yang telah memperjuangkan kemerdekaan Indonesia.
+
+  Upacara tersebut dipimpin oleh Bapak Iip Syarif H, S.P., M.Pd., selaku pembina upacara. Dalam amanatnya, beliau menyampaikan pesan kepada para siswa dan guru mengenai pentingnya mengenang perjuangan para pahlawan, khususnya dalam peristiwa Pertempuran Surabaya. Beliau menyoroti semangat perjuangan para pahlawan yang tidak mengutamakan kepentingan kelompok, melainkan menempatkan kemerdekaan Indonesia sebagai tujuan utama. Tekad untuk memperjuangkan Indonesia merdeka atau mati menjadi gambaran besarnya pengorbanan yang telah dilakukan demi tanah air.
+
+  Selain mengenang perjuangan masa lalu, pembina upacara juga menegaskan bahwa perjuangan bangsa Indonesia belum sepenuhnya selesai. Kemerdekaan yang telah diraih bukanlah akhir dari perjuangan, melainkan awal dari tanggung jawab untuk terus membangun bangsa. Pesan tersebut ditujukan kepada generasi muda Indonesia agar senantiasa memiliki semangat juang, rasa nasionalisme, serta kesadaran untuk berkontribusi bagi tanah air.
+
+  Para pemuda diharapkan mampu meneruskan perjuangan para pahlawan melalui berbagai bentuk kontribusi positif demi mewujudkan Indonesia yang semakin maju dan sejahtera. Peringatan Hari Pahlawan di SMA Negeri 3 Banjar ini menjadi momentum untuk merefleksikan kembali nilai-nilai perjuangan, persatuan, dan pengorbanan. Semangat para pahlawan diharapkan tidak hanya dikenang setiap tanggal 10 November, tetapi juga diwujudkan dalam kehidupan sehari-hari oleh generasi penerus bangsa. Perjuangan belum usai. Semangat para pahlawan akan terus hidup dalam langkah generasi muda Indonesia.`,
+    driveUrl: "https://drive.google.com/drive/folders/1QbBmVm7FZ859MPO-Bi7R0YLvj1shc_eN"
+  },
+  {
     id: "pemilos-2026-day-2",
     title: "Pemilos 2026 Day 2: Transisi Pemimpin OSIS",
     date: "2026-10-21",
     category: ["organisasi", "event-sekolah"],
-    thumbnail: "assets/dokumentasi/pemilos day 2.png",
+    thumbnail: "assets/dokumentasi/pemilos day 2.jpg",
     description: `Pada hari Rabu, 21 Oktober 2026, SMA Negeri 3 Banjar kembali mengadakan regenerasi melalui pemilihan ketua OSIS (Organisasi Siswa Intra Sekolah). Momen ini menjadi sarana bagi para siswa untuk belajar berdemokrasi.
 
 Pada hari ini, para siswa diinstruksikan untuk melakukan pemilihan terhadap pasangan calon (paslon) yang akan mereka pilih sebagai ketua dan wakil ketua OSIS.
@@ -29,14 +44,14 @@ Berdasarkan hasil penghitungan suara, Pasangan Calon (Paslon) 4 yang terdiri dar
 Kegiatan ini sekaligus menjadi penutup rangkaian Pemilos 2026 SMA Negeri 3 Banjar, yang tidak hanya menjadi ajang pemilihan pemimpin, tetapi juga menjadi wadah bagi para siswa untuk belajar menerapkan nilai-nilai demokrasi.
 
 Melalui Pemilos, kita belajar bahwa demokrasi bukan sekadar tentang menentukan pilihan, melainkan juga tentang menghargai perbedaan pendapat, mendengarkan setiap gagasan, serta menjunjung tinggi kejujuran, keadilan, dan tanggung jawab. Sebab, setiap suara memiliki arti dan setiap pilihan patut dihargai..`,
-  driveUrl: "https://drive.google.com/drive/folders/1WoAPC9wjS83ht-fpwiCx6uaSFSq0FOS4?usp=sharing"
+  driveUrl: "https://drive.google.com/drive/folders/14m3_jRchzimDgpDOAupEqwbVj_tVDKux?usp=drive_link"
   },
   {
     id: "pemilos-2026-day-1",
     title: "Pemilos 2026 Day 1: Awal Perjalanan Demokrasi",
     date: "2026-10-20",
     category: ["organisasi", "event-sekolah"],
-    thumbnail: "assets/dokumentasi/pemilos day 1.png",
+    thumbnail: "assets/dokumentasi/pemilos day 1.jpg",
     description: `Debat Pemilos  2026 SMAN 3 BANJAR
 Selasa, 20 Oktober 2026
 
@@ -59,7 +74,7 @@ Acara dilanjutkan dengan penampilan seni tari, lengser, parade kandidat, serta p
 Kegiatan hari ini menjadi tahapan akhir menjelang pemilihan Pemilos 2026 yang akan dilaksanakan pada RABU, 21 Oktober 2026. Momen ini menjadi momen penting bagi seluruh siswa SMAN 3 Banjar dalam memilih pemimpin yang akan membawa aspirasi dan mewarnai perjalanan organisasi siswa ke depannya.
 
 Saatnya menentukan pilihan dan menyuarakan aspirasi! Siapa pun yang terpilih, semoga mampu membawa perubahan positif bagi SMAN 3 Banjar. Satu suara, satu harapan, untuk masa depan yang lebih baik!`,
-    driveUrl: "https://drive.google.com/drive/folders/1WoAPC9wjS83ht-fpwiCx6uaSFSq0FOS4?usp=sharing"
+    driveUrl: "https://drive.google.com/drive/folders/1mngZYHKnmnHpvcbpriTiDEg3jJPR5bx7?usp=drive_link"
   },
   {
     id: "LDK-2026-day-2",
