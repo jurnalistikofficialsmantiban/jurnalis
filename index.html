@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JURNALISTIK — Digital Organization Hub</title>
+  <meta name="description" content="JURNALISTIK — mengabadikan cerita, menyampaikan informasi. Profil organisasi, struktur kepengurusan, dokumentasi kegiatan, dan anggota.">
+
+  <!-- Ganti dengan favicon asli, taruh di assets/logo/ -->
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      try {
+        var raw = sessionStorage.getItem("jurnalistik_shutter");
+        if (!raw) return;
+        var data = JSON.parse(raw);
+        if (Date.now() - data.ts < 5000) {
+          document.documentElement.classList.add("is-page-entering");
+        } else {
+          sessionStorage.removeItem("jurnalistik_shutter");
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand" aria-label="JURNALISTIK — Beranda">
+        <img src="assets/logo/logo.png" alt="" class="brand-logo" width="32" height="32">
+        <span class="brand-name">JURNALISTIK</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link is-active">Beranda</a></li>
+          <li><a href="profil.html" class="nav-link">Profil</a></li>
+          <li><a href="dokumentasi.html" class="nav-link">Dokumentasi</a></li>
+          <li><a href="anggota.html" class="nav-link">Anggota</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-decoration" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy" data-reveal>
+          <p class="hero-eyebrow">SMAN 3 Banjar // Redaksi Sekolah</p>
+          <h1 id="hero-title" class="hero-title">JURNALISTIK</h1>
+
+          <div class="hero-motto" aria-label="Semboyan JURNALISTIK">
+            <span class="hero-motto-dot" aria-hidden="true"></span>
+            <span>FROM FACT TO IMPACT</span>
+          </div>
+
+          <p class="hero-lead">
+            Mengabadikan cerita. Menyampaikan informasi.
+          </p>
+
+          <div class="hero-actions">
+            <a href="dokumentasi.html" class="btn btn-primary">
+              Lihat Dokumentasi
+              <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="profil.html" class="btn btn-ghost">
+              Kenal Jurnalistik
+              <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal data-reveal-delay="1">
+          <figure class="hero-frame">
+            <img
+              src="assets/logo/logo.png"
+              alt="Dokumentasi kegiatan lapangan tim JURNALISTIK SMAN 3 Banjar"
+              class="hero-image"
+              data-parallax
+            >
+            <figcaption class="hero-frame-bar">
+              <span class="hero-frame-tag">EDISI 2026/2027</span>
+              <span class="hero-frame-caption">Liputan &amp; Dokumentasi SMAN 3 Banjar</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-strip" aria-label="Identitas redaksi dan pintasan divisi">
+      <div class="container">
+        <div class="editorial-strip-stats" data-reveal>
+          <div class="editorial-stat">
+            <span class="editorial-stat-num">06</span>
+            <div class="editorial-stat-text">
+              <strong>Divisi Aktif</strong>
+              <span>Kolaborasi lintas kreatif, visual, hingga tulisan</span>
+            </div>
+          </div>
+          <div class="editorial-stat">
+            <span class="editorial-stat-num">26/27</span>
+            <div class="editorial-stat-text">
+              <strong>Periode Kepengurusan</strong>
+              <span>Organisasi Pers &amp; Media SMAN 3 Banjar</span>
+            </div>
+          </div>
+          <div class="editorial-stat">
+            <span class="editorial-stat-num">03</span>
+            <div class="editorial-stat-text">
+              <strong>Medium Karya</strong>
+              <span>Foto, Video, dan Artikel Kegiatan Sekolah</span>
+            </div>
+          </div>
+        </div>
+
+        <nav class="editorial-strip-divisions" aria-label="Akses cepat divisi" data-reveal data-reveal-delay="1">
+          <span class="editorial-strip-label">DIVISI //</span>
+          <div class="editorial-division-links">
+            <a href="anggota.html?divisi=kreatif" class="editorial-division-pill"><span>01</span> Kreatif</a>
+            <a href="anggota.html?divisi=desain-grafis" class="editorial-division-pill"><span>02</span> Desain Grafis</a>
+            <a href="anggota.html?divisi=editing" class="editorial-division-pill"><span>03</span> Editing</a>
+            <a href="anggota.html?divisi=fotografi" class="editorial-division-pill"><span>04</span> Fotografi</a>
+            <a href="anggota.html?divisi=videografi" class="editorial-division-pill"><span>05</span> Videografi</a>
+            <a href="anggota.html?divisi=artikel" class="editorial-division-pill"><span>06</span> Artikel</a>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section class="docs-preview" aria-labelledby="docs-preview-title">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2 id="docs-preview-title">Dokumentasi Terbaru</h2>
+          <a href="dokumentasi.html" class="link-arrow">
+            Lihat semua
+            <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="docs-scroll" id="docsScroll" role="list">
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <span class="brand-name">JURNALISTIK</span>
+        <p class="footer-tagline">Mengabadikan cerita.<br>Menyampaikan informasi.</p>
+
+        
+          <a href="https://www.instagram.com/jurnalis.smantiga/"
+          class="social-link"
+          aria-label="Instagram JURNALISTIK"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ph ph-instagram-logo" aria-hidden="true"></i>
+          <span class="social-link-text">
+            <strong>Instagram JURNALISTIK</strong>
+            <span>@jurnalis.smantiga</span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <p class="footer-heading">Navigasi</p>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="dokumentasi.html">Dokumentasi</a></li>
+          <li><a href="anggota.html">Anggota</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-meta">
+        <p class="footer-heading">Redaksi &amp; Divisi</p>
+        <p class="footer-meta-info">SMAN 3 Banjar &middot; Periode 2026/2027</p>
+        <ul class="footer-division-list">
+          <li><a href="anggota.html?divisi=kreatif">01 Kreatif</a></li>
+          <li><a href="anggota.html?divisi=desain-grafis">02 Desain Grafis</a></li>
+          <li><a href="anggota.html?divisi=editing">03 Editing</a></li>
+          <li><a href="anggota.html?divisi=fotografi">04 Fotografi</a></li>
+          <li><a href="anggota.html?divisi=videografi">05 Videografi</a></li>
+          <li><a href="anggota.html?divisi=artikel">06 Artikel</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Ada bug atau saran? Hubungi <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4iWwsHOIlj9PzADW55S_i3xoptTnTVbQl94Mu4vXYAdnyHA/viewform?usp=publish-editor" class="footer-credit-link" target="_blank" rel="noopener noreferrer">Adnan Sya'ban Mubarok via Google Form</a></p>
+        <p>&copy; <span id="currentYear">2026</span> JURNALISTIK</p>
+      </div>
+
+    </div>
+  </footer>
+    <script src="data/dokumentasi.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
